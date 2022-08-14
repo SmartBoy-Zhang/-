@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+*{
+    margin: 0;/* 外边距 */
+    padding: 0;/* 内边距 */
+}
+
+body{
+    display: flex; /* 是一种布局方式。它既可以应用于容器中，也可以应用于行内元素。 */   /* flex--弹性盒子 */
+    flex-direction: column; /* 设置柔性方向（放置方式，定义主轴和方向） */
+    justify-content: center;/* 将元素沿主轴朝向（列）对齐容器的中心相互齐平包装。 */
+    align-items: center;/* 定义项目在交叉轴上与交叉轴的中点对齐 */
+    height: 100vh;/* height:100vh == height:100%;设置height:100vh，该元素会被撑开屏幕高度一致。 */
+    background: url(./3.jpg) no-repeat/* 不重复 */;
+    background-size: cover;/* 按照图片的比例放大或者缩小至充满容器 */
+}
+
+.box{
+    display: flex; /* 是一种布局方式。它既可以应用于容器中，也可以应用于行内元素。 */   /* flex--弹性盒子 */
+    flex-direction: column; /* 设置柔性方向（放置方式，定义主轴和方向） */
+    justify-content: center;/* 将元素沿主轴朝向（列）对齐容器的中心相互齐平包装。 */
+    align-items: center;/* 定义项目在交叉轴上与交叉轴的中点对齐 */
+    width: 350px;
+    height: 300px;
+    border-top: 1px solid rgba(255 , 255, 255, 0.5);/* 边框 */
+    border-left: 1px solid rgba(255 , 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255 , 255, 255, 0.3);
+    border-right: 1px solid rgba(255 , 255, 255, 0.3);
+    backdrop-filter: blur(10px);/* 背景滤镜 */
+    background: rgba(50, 50, 50, 0.3);
+    border-radius: 20px;
+}
+
+.box > h2{
+    color: aliceblue;
+    font-family: cursive;/* 手写体 */
+    font-size: 38px;
+}
+
+.box .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.box .input-box > label{
+    margin-bottom: 5px;
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+}
+
+.box .input-box > input{
+    color: white;
+    font-size: 14px;
+    height: 35px;
+    width: 250px;
+    background: rgba(255 , 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.box .input-box > input:focus{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.box .btn-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box .btn-box > a {
+    font-size: 13px;
+    text-decoration: none;
+    color:rgba(75, 58, 58, 0.9);
+    transform: 0.2s;
+    width: 250px;
+    text-align: end;
+}
+
+.box .btn-box > a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.box .btn-box > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: start;
+    margin-top: 20px;
+}
+
+.box .btn-box > div > button{
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgba(111, 24, 161, 0.8);
+    background-color: rgba(86, 58, 197, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.box .btn-box >div >button:nth-of-type(2){
+    margin-left: 10px;
+}
+
+.box .btn-box > div > button:hover{
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgba(157, 15, 239, 0.954);
+    background-color: rgba(52, 6, 238, 0.5);
+}
